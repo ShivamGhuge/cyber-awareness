@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Security Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-page">
+
+    <header class="admin-topbar">
+
+        <div class="admin-brand">
+            <div class="admin-brand-icon">🛡</div>
+
+            <div>
+                <h2>Cyber Awareness</h2>
+                <span>Security Operations</span>
+            </div>
+        </div>
+
+        <div class="admin-topbar-right">
+            <span class="admin-live">
+                <span class="admin-live-dot"></span>
+                System Online
+            </span>
+
+            <a href="dashboard.html" class="admin-profile-link">
+                Profile
+            </a>
+        </div>
+
+    </header>
+
+
+    <main class="admin-main">
+
+        <section class="admin-hero">
+
+            <div>
+                <span class="admin-eyebrow">
+                    SECURITY CONTROL CENTER
+                </span>
+
+                <h1>Incident Management</h1>
+
+                <p>
+                    Monitor, review and resolve cybersecurity incidents
+                    reported by students.
+                </p>
+            </div>
+
+            <div class="admin-shield">
+                🛡
+            </div>
+
+        </section>
+
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">📋</span>
+
+                <div>
+                    <span class="admin-stat-label">
+                        Total Reports
+                    </span>
+
+                    <strong id="adminTotalReports">
+                        —
+                    </strong>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">⚠</span>
+
+                <div>
+                    <span class="admin-stat-label">
+                        Under Review
+                    </span>
+
+                    <strong id="adminReviewReports">
+                        —
+                    </strong>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">✓</span>
+
+                <div>
+                    <span class="admin-stat-label">
+                        Resolved
+                    </span>
+
+                    <strong id="adminResolvedReports">
+                        —
+                    </strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="admin-reports-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+                    <span class="admin-section-label">
+                        INCIDENT QUEUE
+                    </span>
+
+                    <h2>Student Reports</h2>
+                </div>
+
+                <div id="adminMessage" class="admin-message">
+                    Loading reports...
+                </div>
+
+            </div>
+
+
+            <div id="adminReports"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="admin-footer">
+        <span>Cyber Awareness Security Operations</span>
+        <span>Authorized administrators only</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

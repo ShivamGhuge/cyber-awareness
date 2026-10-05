@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Help Center - Cyber Awareness</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =================================
+           HELP CENTER HERO
+        ================================= */
+
+        .help-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #05090E 0%,
+                    #10204A 55%,
+                    #1F57F5 100%
+                );
+
+            color: #FFFFFF;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .help-hero-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .help-hero .section-badge {
+            display: inline-block;
+
+            background: rgba(0, 221, 255, 0.15);
+            border: 1px solid rgba(0, 221, 255, 0.45);
+
+            color: #00DDFF;
+
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            margin-bottom: 20px;
+        }
+
+        .help-hero h1 {
+            font-size: 48px;
+            margin: 0 0 18px;
+            line-height: 1.15;
+        }
+
+        .help-hero p {
+            max-width: 700px;
+            margin: auto;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            color: #E6F7FF;
+        }
+
+
+        /* =================================
+           GENERAL HELP SECTION
+        ================================= */
+
+        .help-section {
+            padding: 70px 20px;
+            background: #FFFFFF;
+        }
+
+        .help-container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .help-section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .help-section-heading h2 {
+            font-size: 34px;
+            color: #05090E;
+            margin: 12px 0;
+        }
+
+        .help-section-heading p {
+            max-width: 700px;
+            margin: auto;
+
+            color: #526174;
+
+            line-height: 1.7;
+        }
+
+        .help-badge {
+            display: inline-block;
+
+            color: #1F57F5;
+
+            background: rgba(43, 175, 242, 0.12);
+
+            padding: 7px 15px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            letter-spacing: 0.4px;
+        }
+
+
+        /* =================================
+           HELP CARDS
+        ================================= */
+
+        .help-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 24px;
+        }
+
+        .help-card {
+            background: #FFFFFF;
+
+            border: 1px solid #DCE8F5;
+
+            border-radius: 16px;
+
+            padding: 28px;
+
+            transition: 0.25s ease;
+
+            box-shadow:
+                0 8px 25px rgba(5, 9, 14, 0.06);
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+
+            border-color: #2BAFF2;
+
+            box-shadow:
+                0 14px 32px rgba(31, 87, 245, 0.12);
+        }
+
+        .help-icon {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #EAF8FF;
+
+            border-radius: 13px;
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+        }
+
+        .help-card h3 {
+            color: #05090E;
+
+            font-size: 20px;
+
+            margin: 0 0 10px;
+        }
+
+        .help-card p {
+            color: #526174;
+
+            line-height: 1.7;
+
+            margin: 0 0 18px;
+        }
+
+        .help-card ul {
+            margin: 0;
+
+            padding-left: 20px;
+
+            color: #37465A;
+        }
+
+        .help-card li {
+            margin-bottom: 9px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =================================
+           REPORTING GUIDE
+        ================================= */
+
+        .report-guide-section {
+            padding: 75px 20px;
+
+            background: #F4FAFF;
+        }
+
+        .report-guide-container {
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+        .report-guide-heading {
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+        .report-guide-heading h2 {
+            color: #05090E;
+
+            font-size: 34px;
+
+            margin: 14px 0 10px;
+        }
+
+        .report-guide-heading p {
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #526174;
+
+            line-height: 1.7;
+        }
+
+        .report-guide-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .report-option {
+            border-radius: 18px;
+
+            padding: 35px;
+
+            box-shadow:
+                0 10px 30px rgba(5, 9, 14, 0.07);
+        }
+
+        .school-report-option {
+            background: #FFFFFF;
+
+            border: 2px solid #2BAFF2;
+        }
+
+        .official-report-option {
+            background: #05090E;
+
+            border: 2px solid #00DDFF;
+        }
+
+        .report-option-icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+        }
+
+        .school-report-option .report-option-icon {
+            background: #EAF8FF;
+        }
+
+        .official-report-option .report-option-icon {
+            background: rgba(0, 221, 255, 0.12);
+        }
+
+        .report-option h3 {
+            font-size: 24px;
+
+            margin: 0 0 12px;
+        }
+
+        .school-report-option h3 {
+            color: #05090E;
+        }
+
+        .official-report-option h3 {
+            color: #FFFFFF;
+        }
+
+        .report-option-description {
+            line-height: 1.7;
+
+            margin-bottom: 20px;
+        }
+
+        .school-report-option .report-option-description {
+            color: #526174;
+        }
+
+        .official-report-option .report-option-description {
+            color: #D9E8F5;
+        }
+
+        .report-option ul {
+            line-height: 1.7;
+
+            padding-left: 20px;
+
+            margin-bottom: 25px;
+        }
+
+        .school-report-option ul {
+            color: #37465A;
+        }
+
+        .official-report-option ul {
+            color: #D9E8F5;
+        }
+
+        .report-option li {
+            margin-bottom: 8px;
+        }
+
+        .school-report-button,
+        .official-report-button {
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: 600;
+
+            transition: 0.25s ease;
+        }
+
+        .school-report-button {
+            background: #1F57F5;
+
+            color: #FFFFFF;
+        }
+
+        .school-report-button:hover {
+            background: #2BAFF2;
+        }
+
+        .official-report-button {
+            background: #00DDFF;
+
+            color: #05090E;
+
+            font-weight: 700;
+        }
+
+        .official-report-button:hover {
+            background: #2BAFF2;
+        }
+
+        .report-guide-note {
+            margin-top: 30px;
+
+            padding: 20px 25px;
+
+            background: #FFFFFF;
+
+            border-left: 5px solid #1F57F5;
+
+            border-radius: 8px;
+
+            color: #37465A;
+
+            line-height: 1.7;
+        }
+
+        .report-guide-note strong {
+            color: #05090E;
+        }
+
+
+        /* =================================
+           EMERGENCY HELP
+        ================================= */
+
+        .emergency-section {
+            padding: 70px 20px;
+
+            background: #FFFFFF;
+        }
+
+        .emergency-box {
+            max-width: 1050px;
+
+            margin: auto;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #05090E,
+                    #10204A
+                );
+
+            border-radius: 20px;
+
+            padding: 45px;
+
+            color: #FFFFFF;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 35px;
+
+            box-shadow:
+                0 18px 45px rgba(5, 9, 14, 0.18);
+        }
+
+        .emergency-content {
+            flex: 1;
+        }
+
+        .emergency-label {
+            color: #00DDFF;
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+            letter-spacing: 0.8px;
+
+            text-transform: uppercase;
+        }
+
+        .emergency-box h2 {
+            font-size: 32px;
+
+            margin: 10px 0 12px;
+        }
+
+        .emergency-box p {
+            color: #D9E8F5;
+
+            line-height: 1.7;
+
+            margin: 0;
+        }
+
+        .helpline-number {
+            min-width: 190px;
+
+            text-align: center;
+
+            background: #FFFFFF;
+
+            color: #1F57F5;
+
+            border-radius: 14px;
+
+            padding: 22px 25px;
+        }
+
+        .helpline-number span {
+            display: block;
+
+            color: #526174;
+
+            font-size: 13px;
+
+            margin-bottom: 6px;
+        }
+
+        .helpline-number strong {
+            display: block;
+
+            font-size: 32px;
+        }
+
+
+        /* =================================
+           FOUR STEPS
+        ================================= */
+
+        .steps-section {
+            padding: 70px 20px;
+
+            background: #FFFFFF;
+        }
+
+        .steps-grid {
+            max-width: 950px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .step-card {
+            text-align: center;
+
+            padding: 25px 18px;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+
+            margin: 0 auto 18px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #1F57F5;
+
+            color: #FFFFFF;
+
+            font-size: 18px;
+
+            font-weight: 700;
+        }
+
+        .step-card h3 {
+            color: #05090E;
+
+            font-size: 18px;
+
+            margin-bottom: 9px;
+        }
+
+        .step-card p {
+            color: #526174;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+            margin: 0;
+        }
+
+
+        /* =================================
+           FAQ
+        ================================= */
+
+        .faq-section {
+            padding: 70px 20px;
+
+            background: #F7FBFF;
+        }
+
+        .faq-container {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .faq-item {
+            background: #FFFFFF;
+
+            border: 1px solid #DCE8F5;
+
+            border-radius: 12px;
+
+            margin-bottom: 14px;
+
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+
+            padding: 21px 24px;
+
+            font-weight: 600;
+
+            color: #05090E;
+
+            list-style: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+
+            float: right;
+
+            color: #1F57F5;
+
+            font-size: 22px;
+
+            font-weight: 700;
+        }
+
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+
+        .faq-answer {
+            padding: 0 24px 22px;
+
+            color: #526174;
+
+            line-height: 1.7;
+        }
+
+
+        /* =================================
+           FINAL CTA
+        ================================= */
+
+        .help-cta {
+            padding: 75px 20px;
+
+            text-align: center;
+
+            background: #FFFFFF;
+        }
+
+        .help-cta h2 {
+            color: #05090E;
+
+            font-size: 34px;
+
+            margin-bottom: 12px;
+        }
+
+        .help-cta p {
+            max-width: 650px;
+
+            margin: 0 auto 28px;
+
+            color: #526174;
+
+            line-height: 1.7;
+        }
+
+        .help-report-button {
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            border-radius: 8px;
+
+            background: #1F57F5;
+
+            color: #FFFFFF;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: 0.25s ease;
+        }
+
+        .help-report-button:hover {
+            background: #2BAFF2;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =================================
+           RESPONSIVE
+        ================================= */
+
+        @media (max-width: 900px) {
+
+            .help-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .report-guide-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .emergency-box {
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .help-hero {
+                padding: 60px 20px;
+            }
+
+            .help-hero h1 {
+                font-size: 36px;
+            }
+
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .report-guide-section {
+                padding: 55px 20px;
+            }
+
+            .report-option {
+                padding: 28px;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .emergency-box {
+                padding: 30px 22px;
+            }
+
+            .emergency-box h2 {
+                font-size: 26px;
+            }
+
+            .helpline-number {
+                width: 100%;
+
+                box-sizing: border-box;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     NAVIGATION
+================================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            🛡️
+        </span>
+
+        <span>
+            Cyber Awareness
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="learn.html">
+            Learn
+        </a>
+
+        <a href="help.html" class="active">
+            Help
+        </a>
+
+        <a
+            href="report.html"
+            class="report-btn"
+        >
+            Report Incident
+        </a>
+
+        <a
+            href="login.html"
+            class="login-btn"
+            id="authNavButton"
+        >
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =================================
+     HERO
+================================= -->
+
+<section class="help-hero">
+
+    <div class="help-hero-content">
+
+        <span class="section-badge">
+            Cyber Safety Help Center
+        </span>
+
+        <h1>
+            Need Help With a Cybersecurity Problem?
+        </h1>
+
+        <p>
+            Find practical guidance for common online safety
+            problems, learn what to do when something goes wrong,
+            and report incidents through the appropriate channel.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     COMMON PROBLEMS
+================================= -->
+
+<section class="help-section">
+
+    <div class="help-container">
+
+        <div class="help-section-heading">
+
+            <span class="help-badge">
+                QUICK HELP
+            </span>
+
+            <h2>
+                What Do You Need Help With?
+            </h2>
+
+            <p>
+                Find the situation closest to your problem
+                and follow the recommended safety steps.
+            </p>
+
+        </div>
+
+
+        <div class="help-grid">
+
+
+            <!-- ACCOUNT -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    My Account Was Hacked
+                </h3>
+
+                <p>
+                    If someone may have accessed your account,
+                    act quickly to protect it.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Change your password immediately.
+                    </li>
+
+                    <li>
+                        Sign out of unknown devices.
+                    </li>
+
+                    <li>
+                        Enable two-factor authentication.
+                    </li>
+
+                    <li>
+                        Check for suspicious account activity.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PHISHING -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    🎣
+                </div>
+
+                <h3>
+                    I Received a Suspicious Message
+                </h3>
+
+                <p>
+                    Be careful with unexpected messages,
+                    links, attachments, and requests.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Do not click suspicious links.
+                    </li>
+
+                    <li>
+                        Do not share passwords or OTPs.
+                    </li>
+
+                    <li>
+                        Verify the sender independently.
+                    </li>
+
+                    <li>
+                        Report suspicious activity.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CYBERBULLYING -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    🛑
+                </div>
+
+                <h3>
+                    Cyberbullying or Online Harassment
+                </h3>
+
+                <p>
+                    If someone is threatening, harassing,
+                    or repeatedly targeting you online.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Do not respond aggressively.
+                    </li>
+
+                    <li>
+                        Save relevant evidence.
+                    </li>
+
+                    <li>
+                        Block the person where appropriate.
+                    </li>
+
+                    <li>
+                        Tell a trusted adult or authority.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- DEVICE -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    📱
+                </div>
+
+                <h3>
+                    My Device Was Lost or Stolen
+                </h3>
+
+                <p>
+                    Protect your accounts and information if
+                    your phone, tablet, or computer is missing.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Use device location tools if available.
+                    </li>
+
+                    <li>
+                        Lock the device remotely.
+                    </li>
+
+                    <li>
+                        Change important account passwords.
+                    </li>
+
+                    <li>
+                        Contact the appropriate authorities.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SCAM -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    💳
+                </div>
+
+                <h3>
+                    I May Have Been Scammed
+                </h3>
+
+                <p>
+                    If you sent money or shared information
+                    with a suspicious person or service.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Stop further communication.
+                    </li>
+
+                    <li>
+                        Contact your bank or payment provider.
+                    </li>
+
+                    <li>
+                        Secure affected accounts.
+                    </li>
+
+                    <li>
+                        Keep transaction information.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PRIVACY -->
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    My Personal Information Is Exposed
+                </h3>
+
+                <p>
+                    If your personal information has been
+                    shared or exposed online.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Identify what information was exposed.
+                    </li>
+
+                    <li>
+                        Change affected passwords.
+                    </li>
+
+                    <li>
+                        Review account privacy settings.
+                    </li>
+
+                    <li>
+                        Monitor for suspicious activity.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     WHERE SHOULD I REPORT?
+================================= -->
+
+<section class="report-guide-section">
+
+    <div class="report-guide-container">
+
+        <div class="report-guide-heading">
+
+            <span class="help-badge">
+                REPORTING GUIDE
+            </span>
+
+            <h2>
+                Where Should I Report?
+            </h2>
+
+            <p>
+                Choose the option that matches what you need.
+                If you are unsure, read the descriptions below
+                before submitting your report.
+            </p>
+
+        </div>
+
+
+        <div class="report-guide-grid">
+
+
+            <!-- CYBER AWARENESS -->
+
+            <div
+                class="
+                    report-option
+                    school-report-option
+                "
+            >
+
+                <div class="report-option-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    Report to Cyber Awareness
+                </h3>
+
+                <p class="report-option-description">
+                    Use this option when you want to report a
+                    cybersecurity incident through this Cyber
+                    Awareness platform for school or college
+                    awareness and support.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Report an incident for awareness and support.
+                    </li>
+
+                    <li>
+                        Keep a record of your submitted report.
+                    </li>
+
+                    <li>
+                        View your reports from your Profile.
+                    </li>
+
+                </ul>
+
+                <a
+                    href="report.html"
+                    class="school-report-button"
+                >
+                    Report Incident
+                </a>
+
+            </div>
+
+
+            <!-- OFFICIAL GOVERNMENT PORTAL -->
+
+            <div
+                class="
+                    report-option
+                    official-report-option
+                "
+            >
+
+                <div class="report-option-icon">
+                    🇮🇳
+                </div>
+
+                <h3>
+                    Report to the Official Portal
+                </h3>
+
+                <p class="report-option-description">
+                    Use the official Government of India
+                    National Cyber Crime Reporting Portal when
+                    you need to submit a cybercrime complaint
+                    through the government reporting system.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Official government cybercrime reporting portal.
+                    </li>
+
+                    <li>
+                        Useful for reporting cybercrime complaints.
+                    </li>
+
+                    <li>
+                        For financial cyber fraud, call 1930 promptly.
+                    </li>
+
+                </ul>
+
+                <a
+                    href="https://www.cybercrime.gov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="official-report-button"
+                >
+                    Open Official Portal →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- EXPLANATION -->
+
+        <div class="report-guide-note">
+
+            <strong>
+                Not sure which one to choose?
+            </strong>
+
+            Use
+            <strong>Report Incident</strong>
+            if you want to submit an incident through this
+            Cyber Awareness platform.
+
+            Use the
+            <strong>Official Portal</strong>
+            when you need to report a cybercrime through the
+            Government of India's official reporting system.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     EMERGENCY CYBER FRAUD
+================================= -->
+
+<section class="emergency-section">
+
+    <div class="emergency-box">
+
+        <div class="emergency-content">
+
+            <span class="emergency-label">
+                Immediate Cyber Crime Assistance
+            </span>
+
+            <h2>
+                Financial Cyber Fraud?
+            </h2>
+
+            <p>
+                If you have experienced financial cyber fraud
+                in India, contact the National Cyber Crime
+                Helpline as soon as possible and preserve
+                relevant transaction information.
+            </p>
+
+        </div>
+
+
+        <div class="helpline-number">
+
+            <span>
+                National Cyber Crime Helpline
+            </span>
+
+            <strong>
+                1930
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     FAQ
+================================= -->
+
+<section class="faq-section">
+
+    <div class="faq-container">
+
+        <div class="help-section-heading">
+
+            <span class="help-badge">
+                FAQ
+            </span>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <details class="faq-item">
+
+            <summary>
+                Should I share my password when reporting an incident?
+            </summary>
+
+            <div class="faq-answer">
+
+                No. Never include your password, OTP,
+                authentication code, recovery code, or
+                private key in an incident report.
+
+            </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+            <summary>
+                What should I include in an incident report?
+            </summary>
+
+            <div class="faq-answer">
+
+                Describe what happened, when it happened,
+                and any relevant details that can help
+                explain the incident. Do not include
+                unnecessary sensitive information.
+
+            </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+            <summary>
+                What should I do if I clicked a suspicious link?
+            </summary>
+
+            <div class="faq-answer">
+
+                Stop interacting with the website or message.
+                If you entered credentials, change the affected
+                password and review the account for suspicious
+                activity.
+
+            </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+            <summary>
+                Should I delete suspicious messages?
+            </summary>
+
+            <div class="faq-answer">
+
+                If the message may be useful as evidence,
+                preserve screenshots or other relevant
+                information before deleting or reporting it.
+
+            </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+            <summary>
+                Can I report an incident through this website?
+            </summary>
+
+            <div class="faq-answer">
+
+                Yes. Use the Report Incident page to submit
+                a cybersecurity incident associated with
+                your account.
+
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     FINAL CTA
+================================= -->
+
+<section class="help-cta">
+
+    <h2>
+        Still Need Help?
+    </h2>
+
+    <p>
+        If you experienced a cybersecurity incident and
+        need to document it, you can submit a report through
+        the Cyber Awareness reporting system.
+    </p>
+
+    <a
+        href="report.html"
+        class="help-report-button"
+    >
+        Report an Incident
+    </a>
+
+</section>
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 Cyber Awareness.
+        Stay Safe. Stay Aware.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

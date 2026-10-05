@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Incident - Cyber Awareness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="report-page">
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🛡️</span>
+            <span>Cyber Awareness</span>
+        </a>
+
+        <nav class="nav-links">
+            <nav class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="learn.html">Learn</a>
+
+    <a href="help.html">Help</a>
+
+    <a href="report.html" class="report-btn">
+        Report Incident
+    </a>
+
+    <a href="login.html" class="login-btn" id="authNavButton">
+        Login
+    </a>
+
+</nav>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Report Hero -->
+        <section class="topic-hero">
+
+            <div class="topic-hero-content">
+
+                <span class="section-badge">
+                    Cybersecurity Support
+                </span>
+
+                <h1>Report an Incident</h1>
+
+                <p>
+                    Report a suspicious or harmful cybersecurity incident
+                    so it can be reviewed and handled appropriately.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Report Form -->
+        <section class="report-section">
+
+            <div class="report-container">
+
+                <div class="report-card">
+
+                    <h2>Incident Details</h2>
+
+                    <p class="report-intro">
+                        Provide clear information about what happened.
+                        Do not include passwords, OTPs, recovery codes,
+                        or other unnecessary sensitive information.
+                    </p>
+
+
+                    <form id="reportForm">
+
+                        <!-- Category -->
+                        <div class="form-group">
+
+                            <label for="category">
+                                Incident Category
+                            </label>
+
+                            <select id="category" name="category" required>
+
+                                <option value="">
+                                    Select a category
+                                </option>
+
+                                <option value="phishing">
+                                    Phishing / Suspicious Message
+                                </option>
+
+                                <option value="account">
+                                    Account Security
+                                </option>
+
+                                <option value="malware">
+                                    Malware / Suspicious File
+                                </option>
+
+                                <option value="impersonation">
+                                    Impersonation
+                                </option>
+
+                                <option value="privacy">
+                                    Privacy / Personal Data
+                                </option>
+
+                                <option value="device">
+                                    Device Security
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Description -->
+                        <div class="form-group">
+
+                            <label for="description">
+                                What Happened?
+                            </label>
+
+                            <textarea
+                                id="description"
+                                name="description"
+                                rows="7"
+                                maxlength="2000"
+                                placeholder="Describe what happened, when it happened, and any useful details..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Optional Information -->
+                        <div class="form-group">
+
+                            <label for="additional">
+                                Additional Information
+                                <span class="optional">
+                                    (Optional)
+                                </span>
+                            </label>
+
+                            <textarea
+                                id="additional"
+                                name="additional"
+                                rows="4"
+                                maxlength="1000"
+                                placeholder="Add any other useful information..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Warning -->
+                        <div class="report-warning">
+
+                            <strong>Do not share:</strong>
+
+                            <span>
+                                passwords, OTPs, authentication codes,
+                                recovery codes, private keys, or other
+                                unnecessary sensitive information.
+                            </span>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            type="submit"
+                            class="report-submit"
+                        >
+                            Submit Report
+                        </button>
+
+                    </form>
+
+
+                    <!-- Message -->
+                    <div
+                        id="reportMessage"
+                        class="report-message"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Cyber Awareness. Stay Safe. Stay Aware.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</div>
+</html>

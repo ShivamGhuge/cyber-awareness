@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - Cyber Awareness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">🛡️</span>
+        <span>Cyber Awareness</span>
+    </a>
+
+    <nav class="nav-links">
+        <nav class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="learn.html">Learn</a>
+
+    <a href="help.html">Help</a>
+
+    <a href="report.html" class="report-btn">
+        Report Incident
+    </a>
+
+    <a href="login.html" class="login-btn" id="authNavButton">
+        Login
+    </a>
+
+</nav>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- PROFILE HEADER -->
+
+    <section class="profile-hero">
+
+        <div class="profile-hero-content">
+
+            <span class="section-badge">
+                Student Account
+            </span>
+
+            <h1>My Profile</h1>
+
+            <p>
+                View your account information and
+                cybersecurity incident reports.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFILE INFORMATION -->
+
+    <section class="profile-section">
+
+        <div class="profile-container">
+
+            <div class="profile-card">
+
+                <div class="profile-header">
+
+                    <div class="profile-avatar">
+                        👤
+                    </div>
+
+                    <div class="profile-header-info">
+
+                        <h2 id="studentName">
+                            Student
+                        </h2>
+
+                        <p id="studentRole">
+                            Student Account
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-divider"></div>
+
+
+                <div class="profile-information">
+
+                    <div class="profile-info-item">
+
+                        <span class="profile-info-label">
+                            Full Name
+                        </span>
+
+                        <span
+                            id="profileName"
+                            class="profile-info-value"
+                        >
+                            Loading...
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="profile-info-label">
+                            Email Address
+                        </span>
+
+                        <span
+                            id="profileEmail"
+                            class="profile-info-value"
+                        >
+                            Loading...
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="profile-info-label">
+                            User ID
+                        </span>
+
+                        <span
+                            id="profileUserId"
+                            class="profile-info-value"
+                        >
+                            Loading...
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="profile-info-label">
+                            Account Role
+                        </span>
+
+                        <span
+                            id="profileRole"
+                            class="profile-info-value"
+                        >
+                            Loading...
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOGOUT BUTTON -->
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    style="
+                        display: block;
+                        margin: 30px auto 10px auto;
+                        padding: 15px 45px;
+                        min-width: 180px;
+                        background: #1F57F5;
+                        color: #FFFFFF;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    "
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MY REPORTS -->
+
+    <section class="reports-section">
+
+        <div class="profile-container">
+
+            <div class="reports-heading">
+
+                <span class="section-badge">
+                    Account Activity
+                </span>
+
+                <h2>My Incident Reports</h2>
+
+                <p>
+                    View the cybersecurity incidents
+                    submitted from your account.
+                </p>
+
+            </div>
+
+
+            <div class="reports-summary">
+
+                <div class="reports-summary-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <span class="reports-summary-label">
+                        Total Reports
+                    </span>
+
+                    <strong id="totalReports">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="reportsList"
+                class="professional-reports-list"
+            >
+
+                <p class="reports-loading">
+                    Loading your reports...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 Cyber Awareness.
+        Stay Safe. Stay Aware.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
